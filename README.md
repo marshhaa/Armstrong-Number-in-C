@@ -1,1 +1,36 @@
 # Armstrong-Number-in-C
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    int n,sum=0,temp,k,cnt=0,l;
+    printf("Enter range limit\n");
+    scanf("%d",&l);
+    for(n=1;n<=l;n++)
+    {
+        temp=n;
+        int t;
+        t=n;
+        //number of digits
+        while(t!=0)  
+        {  
+            t/=10;  
+            cnt++;  
+        }  
+        
+        
+        //operation
+        for(;n>0;n/=10)
+        {
+            k=n%10;
+            sum=sum+pow(k,cnt);    
+        }
+        n=temp;
+    if(temp==sum)
+    printf("\n%d",n);
+    sum=0;
+    cnt=0;
+    }
+}
+
