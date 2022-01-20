@@ -2,7 +2,7 @@
 #include<math.h>
 void main()
 {
-    int n,sum=0,temp,k,cnt=0,l;
+    long int n,sum=0,temp,k,cnt=0,l;
     printf("Enter range limit\n");
     scanf("%d",&l);
     for(n=1;n<=l;n++)
